@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Midaz Barbearia em Teresina-PI. Corte, barba e cuidados com estilo. Agende pelo WhatsApp.">
+<title>Midaz Barbearia | Teresina</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="hd"><div class="wrap"><nav>
+<a href="#inicio" class="logo gold">MIDAZ</a>
+<button class="burger" id="bg" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<div class="menu" id="mn">
+<a href="#servicos">Serviços</a><a href="#agendar">Agendar</a><a href="#avaliacoes">Avaliações</a><a href="#local">Localização</a>
+<a href="#agendar" class="btn">Agendar horário</a>
+</div></nav></div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap">
+<div>
+<span class="tag"><i class="dot" id="dot"></i><span id="st">Verificando horário…</span></span>
+<h1>Estilo, precisão e <span class="gold">atitude</span>.</h1>
+<p>Na Midaz Barbearia você encontra um ambiente moderno, profissionais qualificados e atendimento que faz você querer voltar.</p>
+<div class="cta"><a href="#agendar" class="btn">Agendar agora</a><a href="#local" class="btn o">Como chegar</a></div>
+<div class="stats">
+<div><b data-n="5.0" data-d="1">0</b><span>Nota no Google</span></div>
+<div><b data-n="16">0</b><span>Avaliações</span></div>
+<div><b data-n="6">0</b><span>Dias por semana</span></div>
+</div></div>
+<div class="pole" aria-hidden="true"></div>
+</div></section>
+
+<section class="alt" id="servicos"><div class="wrap">
+<div class="sh rv"><small>O que fazemos</small><h2>Nossos serviços</h2></div>
+<div class="grid">
+<div class="card rv tilt"><div class="ic">01</div><h3>Corte de cabelo</h3><p>Clássico, degradê ou moderno, feito do jeito que você pediu.</p></div>
+<div class="card rv tilt d1"><div class="ic">02</div><h3>Barba</h3><p>Alinhamento, toalha quente e acabamento impecável.</p></div>
+<div class="card rv tilt d2"><div class="ic">03</div><h3>Combo corte + barba</h3><p>O pacote completo para sair de cabeça erguida.</p></div>
+<div class="card rv tilt d3"><div class="ic">04</div><h3>Sobrancelha e acabamento</h3><p>Detalhes que fazem toda a diferença no visual.</p></div>
+</div></div></section>
+
+<section id="agendar"><div class="wrap two">
+<div class="rv"><div class="sh left"><small>Reserve seu horário</small><h2>Agende pelo <span class="gold">WhatsApp</span></h2></div>
+<p class="mut">Escolha serviço, data e horário. Ao enviar, abriremos o WhatsApp da barbearia com sua solicitação pronta para confirmação.</p>
+<div class="info mt">
+<div class="row"><span>Dados validados</span><span>no seu navegador</span></div>
+<div class="row"><span>Resposta</span><span>direto no WhatsApp</span></div>
+<div class="row"><span>Nada é armazenado</span><span>em servidor</span></div>
+</div></div>
+<form id="f" class="rv d1" novalidate autocomplete="off">
+<label>Nome<input id="nm" maxlength="60" placeholder="Seu nome" required><span class="err" id="e1"></span></label>
+<label>WhatsApp (com DDD)<input id="ph" inputmode="tel" maxlength="16" placeholder="(86) 90000-0000" required><span class="err" id="e2"></span></label>
+<label>Serviço<select id="sv"><option>Corte de cabelo</option><option>Barba</option><option>Combo corte + barba</option><option>Sobrancelha e acabamento</option></select></label>
+<label>Data<input type="date" id="dt" required><span class="err" id="e3"></span></label>
+<label>Horário<select id="tm"><option value="">Escolha a data primeiro</option></select><span class="err" id="e4"></span></label>
+<input class="hp" id="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn" type="submit">Enviar pelo WhatsApp</button>
+<div id="msg" role="status"></div>
+</form></div></section>
+
+<section class="alt" id="avaliacoes"><div class="wrap">
+<div class="sh rv"><small>Quem já veio</small><h2>O que dizem nossos clientes</h2></div>
+<div class="grid">
+<div class="card rv tilt"><div class="stars">★★★★★</div><q>Ambiente moderno, organizado e com energia muito boa. O corte ficou impecável.</q><p>Cliente no Google</p></div>
+<div class="card rv tilt d1"><div class="stars">★★★★★</div><q>A melhor equipe da cidade, ambiente extremamente agradável!</q><p>Cliente no Google</p></div>
+<div class="card rv tilt d2"><div class="stars">★★★★★</div><q>Espaço muito bonito e atendimento excelente.</q><p>Cliente no Google</p></div>
+</div></div></section>
+
+<section id="local"><div class="wrap two">
+<div class="rv"><div class="sh left"><small>Venha nos visitar</small><h2>Localização e horários</h2></div>
+<p class="mut">Av. Dom Severino, 1131 – Rua Begônias, área comercial Posto Leste<br>Morada do Sol, Teresina – PI, 64056-250</p>
+<div class="cta"><a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=-5.0711373,-42.764333&query_place_id=ChIJ21xzXU07jgcRrTlue5-tCwA">Abrir no Google Maps</a>
+<a class="btn o" href="tel:+5586981345061">Ligar (86) 98134-5061</a></div></div>
+<div class="card rv d1" id="hrs"></div>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap">© <span id="yr"></span> Midaz Barbearia · Teresina, PI</div></footer>
+<a class="wa" id="wa" target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">WhatsApp</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
